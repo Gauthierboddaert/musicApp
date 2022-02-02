@@ -9,7 +9,7 @@ export default function HomePage() {
       <Image
         style={styles.img}
         source={{
-          uri: "../assets/logo.jpeg",
+          uri: "../../assets/logo.jpeg",
         }}
       />
       <Button style={styles.btn} mode="contained" onPress={() => alert}>

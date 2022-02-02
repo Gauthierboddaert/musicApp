@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
+import { Button } from "react-native-paper";
 import { Audio } from "expo-av";
 
 export default function AudioPLayer() {
@@ -27,11 +28,14 @@ export default function AudioPLayer() {
 
   return (
     <View style={styles.container}>
-      <Button title="Play Sound" onPress={playSound} />
+      <Button style={styles.btn} mode="contained" onPress={playSound}>
+        Play sound
+      </Button>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {},
+  btn: {},
 });
