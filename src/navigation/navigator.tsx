@@ -1,9 +1,9 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Routes } from "./Route";
-import HomePage from "../components/HomePage";
-import { ListMusicScreen } from "../components/ListMusicScreen";
+import { Routes } from "./route";
+import HomeScreen from "../Screen/HomeScreen";
+import { ListMusicScreen } from "../Screen/ListMusicScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,8 +15,11 @@ export const Navigator = () => {
           headerShown: false,
         }}
       >
-        <Stack.Screen name={Routes.HOME_SCREEN} component={HomePage} />
-        <Stack.Screen name={Routes.LIST_MUSIC} component={ListMusicScreen} />
+        <Stack.Screen name={Routes.HOME_SCREEN} component={HomeScreen} />
+        <Stack.Screen
+          name={Routes.LIST_MUSIC_SCREEN}
+          component={ListMusicScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
