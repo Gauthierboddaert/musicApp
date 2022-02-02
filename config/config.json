@@ -1,7 +1,16 @@
 {
-  "music": {
-    "music1": "Micro_Fire.mp3",
-    "music2": "Never_Better.mp3",
-    "music3": "Move_Out.mp3"
+  "Data": {
+    "music1": {
+      "name": "",
+      "link": "Micro_Fire.mp3"
+    },
+    "music2": {
+      "name": "",
+      "link": "Never_Better.mp3"
+    },
+    "music3": {
+      "name": "",
+      "link": "Move_Out.mp3"
+    }
   }
 }
